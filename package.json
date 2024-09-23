@@ -1,0 +1,23 @@
+{
+  "name": "vp2",
+  "version": "1.0.0",
+  "description": "Veebiprogammeerimine 2. rühm 2024 TLÜ.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://oppur@github.com/opppur/vp2.git"
+  },
+  "keywords": [
+    "Veebiprogammeerimine",
+    "TLÜ"
+  ],
+  "author": "Jonas Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/opppur/vp2/issues"
+  },
+  "homepage": "https://github.com/opppur/vp2#readme"
+}
