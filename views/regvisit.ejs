@@ -15,13 +15,15 @@
 		<li> <a href="/">Avalehele</a></li>
 	</ul>
 	<hr>
-	<h2>Praegune ajahetk</h2>
-	<p>Selle lehe avamise hetkel oli:</p>
-	<ul>
-		<li>Nädalapäev: <%= nowWD %> </li>
-		<li>Kuupäev: <%= nowD %></li>
-		<li>Kellaaeg: <%= nowT %></li>
-	</ul>
-</body>
-</html>
+	<h2>Registreeri oma külastus sellele veebilehele</h2>
+	<form method="POST">
+		<label for="firstNameInput">Sisesta oma eesnimi: </label>
+		<input type="text" id="firstNameInput" name="firstNameInput" placeholder="Eesnimi ...">
+		<br>
+		<label for="lastNameInput">Sisesta oma perekonnanimi: </label>
+		<input type="text" id="lastNameInput" name="lastNameInput" placeholder="Perekonnanimi ...">
+		<br>
+		<input type="submit" id="regSubmit" name="regSubmit" value="Salvesta">
+	</form>
 
+</html>
