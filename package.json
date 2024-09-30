@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/opppur/vp2/issues"
   },
-  "homepage": "https://github.com/opppur/vp2#readme"
+  "homepage": "https://github.com/opppur/vp2#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express.js": "^1.0.0"
+  }
 }
