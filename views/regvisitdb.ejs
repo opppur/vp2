@@ -15,11 +15,15 @@
 		<li> <a href="/">Avalehele</a></li>
 	</ul>
 	<hr>
-	<h2><%= h2 %></h2>
-	<ol>
-		<% listData.forEach(function(phrase){ %>
-			<li><%= phrase %></li>
-		<% }); %>
-	</ol>
+	<h2>Registreeri oma külastus sellele veebilehele (andmebaasi)</h2>
+	<form method="POST">
+		<label for="firstNameInput">Sisesta oma eesnimi: </label>
+		<input type="text" id="firstNameInput" name="firstNameInput" placeholder="Eesnimi ..." value" <%= firstName %>>
+		<br>
+		<label for="lastNameInput">Sisesta oma perekonnanimi: </label>
+		<input type="text" id="lastNameInput" name="lastNameInput" placeholder="Perekonnanimi ..." <%= lastName %>>
+		<br>
+		<input type="submit" id="regSubmit" name="regSubmit" value="Salvesta">
+	</form>
+	<p><%= notice %></p>
 </html>
-
