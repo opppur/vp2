@@ -1,0 +1,25 @@
+ReferenceError: /home/jonaoliv/public_html/vp2/views/regvisitdb.ejs:21
+    19| 	<form method="POST">
+
+    20| 		<label for="firstNameInput">Sisesta oma eesnimi: </label>
+
+ >> 21| 		<input type="text" id="firstNameInput" name="firstNameInput" placeholder="Eesnimi ..." value="<%= firstName %>">
+
+    22| 		<br>
+
+    23| 		<label for="lastNameInput">Sisesta oma perekonnanimi: </label>
+
+    24| 		<input type="text" id="lastNameInput" name="lastNameInput" placeholder="Perekonnanimi ..." value="<%= lastName %>">
+
+
+firstName is not defined
+    at eval ("/home/jonaoliv/public_html/vp2/views/regvisitdb.ejs":12:26)
+    at regvisitdb (/home/jonaoliv/public_html/vp2/node_modules/ejs/lib/ejs.js:703:17)
+    at tryHandleCache (/home/jonaoliv/public_html/vp2/node_modules/ejs/lib/ejs.js:274:36)
+    at View.exports.renderFile [as engine] (/home/jonaoliv/public_html/vp2/node_modules/ejs/lib/ejs.js:491:10)
+    at View.render (/home/jonaoliv/public_html/vp2/node_modules/express/lib/view.js:135:8)
+    at tryRender (/home/jonaoliv/public_html/vp2/node_modules/express/lib/application.js:657:10)
+    at Function.render (/home/jonaoliv/public_html/vp2/node_modules/express/lib/application.js:609:3)
+    at ServerResponse.render (/home/jonaoliv/public_html/vp2/node_modules/express/lib/response.js:1049:7)
+    at Query.onResult (/home/jonaoliv/public_html/vp2/index.js:121:9)
+    at /home/jonaoliv/public_html/vp2/node_modules/mysql2/lib/commands/query.js:90:16

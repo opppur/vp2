@@ -15,15 +15,18 @@
 		<li> <a href="/">Avalehele</a></li>
 	</ul>
 	<hr>
-	<h2>Registreeri oma külastus sellele veebilehele (andmebaasi)</h2>
+<h2>Lisa filmitegelane</h2>
 	<form method="POST">
-		<label for="firstNameInput">Sisesta oma eesnimi: </label>
-		<input type="text" id="firstNameInput" name="firstNameInput" placeholder="Eesnimi ..." value="<%= firstName %>">
+		<label for="firstNameInput">Sisesta eesnimi: </label>
+		<input type="text" id="firstNameInput" name="firstNameInput" placeholder="Eesnimi ...">
 		<br>
-		<label for="lastNameInput">Sisesta oma perekonnanimi: </label>
-		<input type="text" id="lastNameInput" name="lastNameInput" placeholder="Perekonnanimi ..." value="<%= lastName %>">
+		<label for="lastNameInput">Sisesta perekonnanimi: </label>
+		<input type="text" id="lastNameInput" name="lastNameInput" placeholder="Perekonnanimi ...">
 		<br>
+		<label for="birthDateInput">Sisesta sünnikuupäev: </label>
+		<input type="date" id="birthDateInput" name="birthDateInput">
 		<input type="submit" id="regSubmit" name="regSubmit" value="Salvesta">
 	</form>
-	<p><%= notice %></p>
+</body>
 </html>
+

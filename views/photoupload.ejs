@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jonas Oliveira</title>
+</head>
+<body>
+  <img src="/banner/vp_banner_2024.png" alt="Veebiprogammeerimise 2024 aasta kursuse bänner">
+  <h1>Jonas Oliveira</h1>
+  <p>See leht on loodud õppetöö raames <a href="https://www.tlu.ee">Tallinna Ülikoolis</a> ja ei pruugi sisaldada tõsiseltvõetavat materjali.</p>
+    <img src="/~rinde/media/photos/TLU_600x400/tlu_42.jpg" alt="Foto Tallinna Ülikooni Terra hoone sissepääsust">
+	<hr>
+	<ul>
+		<li> <a href="/">Avalehele</a></li>
+	</ul>
+	<hr>
+<h2>Galeriifotode üleslaadimine</h2>
+	<form method="POST" enctype="multipart/form-data">
+		<label for="photoInput">Vali pildifail</label>
+		<input type="file" id="photoInput" name="photoInput" required>
+		<br>
+		<label for="altInput">Sisesta alternatiivtekst </label>
+		<input type="text" id="altInput" name="altInput" placeholder="Sellel pildil ...">
+		<br>
+		<input type="radio" id="privacyInput1" name="privacyInput" value="1" checked>
+		<label for="privacyInput1">Privaatne (ainult omanik näeb)</label>
+		<br>
+		<input type="radio" id="privacyInput2" name="privacyInput" value="2">
+		<label for="privacyInput2">Sisseloginud kasutajatele</label>
+		<br>
+		<input type="radio" id="privacyInput3" name="privacyInput" value="3">
+		<label for="privacyInput3">Avalik</label>
+		<br>
+		<input type="submit" id="photoSubmit" name="photoSubmit" value="Lae üles">
+	</form>
+</body>
+</html>
+

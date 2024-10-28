@@ -23,6 +23,8 @@
   "dependencies": {
     "ejs": "^3.1.10",
     "express.js": "^1.0.0",
-    "mysql2": "^3.11.3"
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.11.3",
+    "sharp": "^0.32.6"
   }
 }
