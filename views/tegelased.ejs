@@ -20,7 +20,7 @@
 	<ul>
 		<% persons.forEach(function(item){ %>
 		<li>
-		<%= item.first_name%> <%= item.last_name%>, sündinud: <%= item.birth_date%>
+		<%= item.first_name%> <%= item.last_name%>, sündinud: <%= item.birth_date%>, <a href="/eestifilm/personrelations/?id=<%= item.id %>">Vaata seoseid</a>
 		</li>
 		<% }); %>
 	</ul>

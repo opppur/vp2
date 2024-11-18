@@ -4,6 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Jonas Oliveira</title>
+  <link rel="stylesheet" href="/style/gallery.css">
+  <link rel="stylesheet" href="/style/modal.css">
+  <script src="/script/gallery.js" defer></script>
 </head>
 <body>
   <img src="/banner/vp_banner_2024.png" alt="Veebiprogammeerimise 2024 aasta kursuse bänner">
@@ -17,12 +20,19 @@
 		<li> <a href="/photoupload">Galeriifotode üleslaadimine</a></li>
 	</ul>
 	<hr>
-	<ul>
-		<% vp2photos.forEach(function(item){ %>
-		<li>
-		<%= item.file_name%> <%= item.alt_text%> <%= item.added%>
-		</li>
-		<% }); %>
-	</ul>
+	<dialog id="modal" class="modalarea">
+		<span id="modalClose" class="modalclose">&times;</span>
+		<div class="modalhorizontal>
+			<div class="modalvertical">
+				<p id="modalCaption"></p>
+				<img id="modalImage" src="/pics/empty.png" alt="galeriipilt">
+			</div>
+		</div>
+	</dialog>
+  <div class="gallery">
+	  <% listData.forEach(function(image){ %>
+		<img src="<%= image.href %><%= image.filename %>" alt="<%= image.alt %>" data-filename="<%=image.filename %>" data-id="<%= image.id %>" class="thumbs">
+	  <% }); %>
+</div>
 </body>
 </html>
